@@ -1,9 +1,9 @@
 # CampusSphere
 CampusSphere is a Full Stack College Management Portal that streamlines academic communication and management among Students, Faculty, and Administrators. The platform enables users to manage notices, assignments, submissions, and profiles through secure role-based authentication.
 
-# Features
+## Features
 
-## Authentication & Security
+### Authentication & Security
 - JWT based Authentication
 - Role Based Authorization
 - Secure Login and Registration
@@ -11,7 +11,7 @@ CampusSphere is a Full Stack College Management Portal that streamlines academic
 - Protected Routes
 - Delete Account Functionality
 
-## Student Module
+### Student Module
 - Register using College Email ID
 - View Campus Notices
 - View Assignments
@@ -21,7 +21,7 @@ CampusSphere is a Full Stack College Management Portal that streamlines academic
 - View Profile Details
 - Delete Account
 
-## Faculty Module
+### Faculty Module
 - Create Notices
 - Create Assignments
 - View Student Submissions
@@ -30,37 +30,37 @@ CampusSphere is a Full Stack College Management Portal that streamlines academic
 - View Profile Details
 - Delete Account
 
-## Admin Module
+### Admin Module
 - Manage Notices
 - Manage Assignments
 - View Submissions
 - View Profile Details
 - Delete Account
 
-## Dashboard Features
+### Dashboard Features
 - Profile Sidebar
 - User Profile Management
 - Date Display
 - Beautiful Dashboard Cards
 - Role Based Dashboards
 
-# Tech Stack
-## Frontend
+## Tech Stack
+### Frontend
 - ReactJS
 - React ROUTER DOM
 - Axios
 - CSS
 
-## Backend
+### Backend
 - NodeJS
 - ExpressJS
 - JWT Authentication
 
-## Database
+### Database
 - PotgreSQL
 
-# Porject Structure
-
+## Porject Structure
+```text
 CampusSphere
 │
 ├── backend
@@ -83,8 +83,9 @@ CampusSphere
 │   └── package.json
 │
 └── README.md
-# User Roles
-## Student
+```
+## User Roles
+### Student
  - Register using College Email ID
  -  View Notices
  -  View Assignments
@@ -92,8 +93,7 @@ CampusSphere
  -  Delete Submitted Assignments
  -  View Profile Details
  -  Delete Account
-
-## Faculty
+### Faculty
 - Create Notices
 - Create Assignments
 - View Student Records
@@ -101,11 +101,66 @@ CampusSphere
 - Delete Accounts
 > Admin accounts are created manually and cannot be registered through the application.
 
-# Registration Rules
-## Students
+## Registration Rules
+### Students
 - Name
 - Registration Number
 - College Email ID
 - Password
 - Branch
 - Year
+
+Example:
+```text
+Registration Number:
+24B01A4617
+
+Email ID:
+24b01a4617@svecw.edu.in
+```
+### Faculty
+- Name
+- Email
+- Password
+- Branch
+NOTE: Only valid college ID's are accepted for both faculty and students
+## Assignment Submission
+Students can:
+
+- Submit Assignment Links.
+- View Submitted Assignments.
+- Delete Submitted Assignments.
+Once a submission is deleted:
+
+- It is removed from the student's dashboard.
+- It is removed from the Faculty/Admin view.
+- It is permanently deleted from the database
+
+## Delete Account Functionality
+Users can permanently delete their accounts.
+
+Deleting an account automatically removes all related records from the database.
+
+### Student
+Deleting an account removes:
+
+- User Details
+- Submitted Assignments
+### Faculty
+Deleting an account removes:
+
+- User Details
+- Created Notices
+- Created Assignments
+- Related Student Submissions
+### Admin
+Deleting an account removes:
+
+- User Details
+- Created Notices
+- Created Assignments
+- Related Student Submissions
+
+## Installation
+
+### Clone Repository
