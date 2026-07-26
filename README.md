@@ -164,3 +164,51 @@ Deleting an account removes:
 ## Installation
 
 ### Clone Repository
+```text
+https://github.com/maha-lakshmi-k/CampusSphere/tree/main
+```
+### Backend Setup
+```text
+cd backend
+```
+Install Dependencies
+```text
+npm install
+```
+create .env file
+```text
+PORT=5000
+
+DATABASE_URL=YOUR_DATABASE_URL
+
+JWT_SECRET=YOUR_SECRET_KEY
+```
+Run backend
+```text
+npm run dev
+```
+or 
+```text
+node server.js
+```
+
+### Frontend Setup
+```text
+cd fronted
+```
+Install Dependencies
+```text
+npm install
+```
+Run Fronted
+```text
+npm run dev
+```
+## Futue Enhancements
+- File Upload Support
+- Email Notifications
+- Password Reset Functionality
+- Dark Mode Support
+- Search and Filter Features
+- Pagination Support
+- Analytics Dashboard
