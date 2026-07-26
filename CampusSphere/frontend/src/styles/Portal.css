@@ -1,0 +1,441 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#F6F4FF;
+    font-family:sans-serif;
+}
+
+
+.portal-container{
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:40px;
+
+}
+
+
+.portal-heading{
+
+    text-align:center;
+
+    font-size:55px;
+
+    color:#6D28D9;
+
+    margin-bottom:10px;
+
+}
+
+
+.portal-sub-heading{
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:gray;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-heading{
+
+    color:#6D28D9;
+
+    font-size:35px;
+
+    margin-top:50px;
+
+    margin-bottom:30px;
+
+}
+
+
+.portal-form-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0px 15px 35px
+    rgba(0,0,0,0.08);
+
+    margin-bottom:50px;
+
+}
+
+
+.portal-form-card h2{
+
+    margin-bottom:30px;
+
+    color:#6D28D9;
+
+}
+
+
+.portal-form-card input{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    background:#F8FAFC;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+
+.portal-form-card input:focus{
+
+    border:
+    2px solid #8B5CF6;
+
+}
+
+
+.portal-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:18px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    background:
+    linear-gradient(
+    135deg,
+    #7C3AED,
+    #9333EA
+    );
+
+    transition:.3s;
+
+}
+
+
+.portal-btn:hover{
+
+    transform:
+    translateY(-4px);
+
+    box-shadow:
+    0px 10px 30px
+    rgba(124,58,237,0.25);
+
+}
+
+
+.portal-card{
+
+    background:white;
+
+    padding:35px;
+
+    margin-top:30px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0px 15px 35px
+    rgba(0,0,0,0.08);
+
+    transition:.3s;
+
+}
+
+
+.portal-card:hover{
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+.portal-card h2{
+
+    color:#1E293B;
+
+    margin-bottom:15px;
+
+}
+
+
+.portal-card h3{
+
+    color:#555;
+
+}
+
+
+.portal-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+
+.notice-border{
+
+    border-left:
+    10px solid #9333EA;
+
+}
+
+
+.assignment-border{
+
+    border-left:
+    10px solid #2563EB;
+
+}
+
+
+.submission-border{
+
+    border-left:
+    10px solid #16A34A;
+
+}
+
+
+.card-details{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+.card-details span{
+
+    padding:12px 20px;
+
+    border-radius:20px;
+
+    background:#F4F1FF;
+
+    color:#6D28D9;
+
+    font-weight:bold;
+
+}
+
+
+.portal-card input{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    background:#F8FAFC;
+
+    font-size:17px;
+
+}
+
+
+.portal-card input:focus{
+
+    border:
+    2px solid #8B5CF6;
+
+}
+
+
+.empty-message{
+
+    text-align:center;
+
+    color:gray;
+
+    margin-top:50px;
+
+}
+
+
+.portal-card h4{
+
+    margin-top:25px;
+
+    color:#2563EB;
+
+}
+
+
+hr{
+
+    border:none;
+
+    height:2px;
+
+    background:#E5E7EB;
+
+}
+
+
+@media(max-width:768px){
+
+.portal-container{
+
+    padding:20px;
+
+}
+
+
+.portal-heading{
+
+    font-size:40px;
+
+}
+
+
+.portal-sub-heading{
+
+    font-size:18px;
+
+}
+
+
+.section-heading{
+
+    font-size:28px;
+
+}
+
+
+.portal-form-card{
+
+    padding:25px;
+
+}
+
+
+.portal-card{
+
+    padding:25px;
+
+}
+
+
+.card-details{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+}
+
+
+@media(max-width:500px){
+
+.portal-heading{
+
+    font-size:32px;
+
+}
+
+
+.portal-sub-heading{
+
+    font-size:16px;
+
+}
+
+
+.portal-btn{
+
+    font-size:18px;
+
+}
+
+
+.portal-card p{
+
+    font-size:16px;
+
+}
+
+}
+.delete-submission-btn{
+margin-top:20px;
+padding:15px;
+width:100%;
+border:none;
+border-radius:18px;
+cursor:pointer;
+font-size:18px;
+font-weight:bold;
+color:white;
+background:
+linear-gradient(
+135deg,
+#EF4444,
+#DC2626
+);
+transition:.3s;
+}
+
+.delete-submission-btn:hover{
+transform:translateY(-4px);
+box-shadow:
+0px 15px 30px
+rgba(239,68,68,.25);
+}
